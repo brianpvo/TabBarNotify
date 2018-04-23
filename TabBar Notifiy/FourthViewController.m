@@ -12,6 +12,7 @@
 @interface FourthViewController ()
 @property (weak, nonatomic) IBOutlet UIView *yellowView;
 @property (weak, nonatomic) IBOutlet CustomView *whiteView;
+@property (nonatomic) UIPanGestureRecognizer *panGesture;
 
 @end
 
@@ -20,14 +21,20 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.view addObserver:self forKeyPath:@"point" options:NSKeyValueObservingOptionNew context:nil];
+    [self.whiteView addObserver:self forKeyPath:@"point" options:NSKeyValueObservingOptionNew context:nil];
+    
+    self.panGesture = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(panMove:)];
+    [self.whiteView addGestureRecognizer:self.panGesture];
 }
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context {
+    NSLog(@"change %@", change);
     if ([keyPath isEqualToString:@"point"]) {
         id value = change[NSKeyValueChangeNewKey];
+        NSLog(@"val %@", value);
         NSValue *valueCast = (NSValue *)value;
         CGPoint point = valueCast.CGPointValue;
+        NSLog(@"point %@", NSStringFromCGPoint(point));
         
         CGFloat yellowX = self.yellowView.center.x;
         CGFloat yellowY = self.yellowView.center.y;
@@ -37,7 +44,14 @@
         
         CGPoint newCenter = CGPointMake(yellowX, yellowY);
         self.yellowView.center = newCenter;
+        
+        
     }
+}
+
+-(void)panMove:(UIPanGestureRecognizer *)sender {
+    CGPoint locationInView = [sender locationInView:self.whiteView];
+    [self.whiteView setPoint:locationInView];
 }
 
 - (void)didReceiveMemoryWarning {
