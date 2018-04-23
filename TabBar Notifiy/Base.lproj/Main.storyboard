@@ -55,6 +55,52 @@
             </objects>
             <point key="canvasLocation" x="621" y="212"/>
         </scene>
+        <!--Item-->
+        <scene sceneID="QeB-DV-2Nw">
+            <objects>
+                <viewController id="eTZ-vY-tLc" customClass="ThirdViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oFi-vf-3B7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hc3-x2-zmI">
+                                <rect key="frame" x="62" y="448" width="250" height="120"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kjr-jX-nj0">
+                                        <rect key="frame" x="10" y="45" width="230" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96966210200000003" green="1" blue="0.54860756960000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="LaK-W2-erF"/>
+                                    <constraint firstItem="Kjr-jX-nj0" firstAttribute="leading" secondItem="Hc3-x2-zmI" secondAttribute="leading" constant="10" id="Smt-xn-PRH"/>
+                                    <constraint firstItem="Kjr-jX-nj0" firstAttribute="centerX" secondItem="Hc3-x2-zmI" secondAttribute="centerX" id="VTq-zn-eo7"/>
+                                    <constraint firstAttribute="width" constant="250" id="Vnk-H2-p24"/>
+                                    <constraint firstAttribute="trailing" secondItem="Kjr-jX-nj0" secondAttribute="trailing" constant="10" id="gaf-xl-qyB"/>
+                                    <constraint firstItem="Kjr-jX-nj0" firstAttribute="centerY" secondItem="Hc3-x2-zmI" secondAttribute="centerY" id="xCm-zD-kWY"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.0" blue="0.046545039429999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Hc3-x2-zmI" firstAttribute="centerX" secondItem="ixt-RO-8z8" secondAttribute="centerX" id="CfW-EU-hKH"/>
+                            <constraint firstItem="ixt-RO-8z8" firstAttribute="bottom" secondItem="Hc3-x2-zmI" secondAttribute="bottom" constant="50" id="GWw-KW-av3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ixt-RO-8z8"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="EB5-yF-RvS"/>
+                    <connections>
+                        <outlet property="bottomConstraint" destination="GWw-KW-av3" id="1kb-qj-GgN"/>
+                        <outlet property="textField" destination="Kjr-jX-nj0" id="hjO-QI-hDh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FZ7-JQ-toD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1421.5999999999999" y="217.24137931034485"/>
+        </scene>
         <!--Item 1-->
         <scene sceneID="Csx-bb-xWR">
             <objects>
@@ -108,6 +154,7 @@
                     <connections>
                         <segue destination="LZo-g9-D8b" kind="relationship" relationship="viewControllers" id="0ew-UD-jHD"/>
                         <segue destination="Ifw-zj-2t3" kind="relationship" relationship="viewControllers" id="uST-ZK-uwO"/>
+                        <segue destination="eTZ-vY-tLc" kind="relationship" relationship="viewControllers" id="u17-Tp-qTj"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qp5-gd-b3b" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [self stepperButtonClicked:self.stepperButton];
 
 }
 - (IBAction)stepperButtonClicked:(UIStepper *)sender {
