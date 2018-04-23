@@ -50,8 +50,9 @@
 }
 
 -(void)panMove:(UIPanGestureRecognizer *)sender {
-    CGPoint locationInView = [sender locationInView:self.whiteView];
-    [self.whiteView setPoint:locationInView];
+    CGPoint translationInView = [sender translationInView:self.whiteView];
+    [sender setTranslation:CGPointZero inView:self.view];
+    [self.whiteView setPoint:translationInView];
 }
 
 - (void)didReceiveMemoryWarning {
