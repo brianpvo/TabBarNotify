@@ -18,6 +18,8 @@
 		7A8C99F8208CEE940029FCA0 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C99F7208CEE940029FCA0 /* TabBarViewController.m */; };
 		7A8C99FB208D4CD10029FCA0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C99FA208D4CD10029FCA0 /* SecondViewController.m */; };
 		7A8C99FE208D59850029FCA0 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C99FD208D59850029FCA0 /* ThirdViewController.m */; };
+		7A8C9A01208D642B0029FCA0 /* FourthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C9A00208D642B0029FCA0 /* FourthViewController.m */; };
+		7A8C9A04208D65260029FCA0 /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A8C9A03208D65260029FCA0 /* CustomView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,10 @@
 		7A8C99FA208D4CD10029FCA0 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		7A8C99FC208D59850029FCA0 /* ThirdViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		7A8C99FD208D59850029FCA0 /* ThirdViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
+		7A8C99FF208D642B0029FCA0 /* FourthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FourthViewController.h; sourceTree = "<group>"; };
+		7A8C9A00208D642B0029FCA0 /* FourthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourthViewController.m; sourceTree = "<group>"; };
+		7A8C9A02208D65260029FCA0 /* CustomView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
+		7A8C9A03208D65260029FCA0 /* CustomView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +131,10 @@
 				7A8C99CF208C2B960029FCA0 /* LaunchScreen.storyboard */,
 				7A8C99D2208C2B960029FCA0 /* Info.plist */,
 				7A8C99D3208C2B960029FCA0 /* main.m */,
+				7A8C99FF208D642B0029FCA0 /* FourthViewController.h */,
+				7A8C9A00208D642B0029FCA0 /* FourthViewController.m */,
+				7A8C9A02208D65260029FCA0 /* CustomView.h */,
+				7A8C9A03208D65260029FCA0 /* CustomView.m */,
 			);
 			path = "TabBar Notifiy";
 			sourceTree = "<group>";
@@ -282,6 +292,8 @@
 				7A8C99FE208D59850029FCA0 /* ThirdViewController.m in Sources */,
 				7A8C99C9208C2B950029FCA0 /* ViewController.m in Sources */,
 				7A8C99D4208C2B960029FCA0 /* main.m in Sources */,
+				7A8C9A04208D65260029FCA0 /* CustomView.m in Sources */,
+				7A8C9A01208D642B0029FCA0 /* FourthViewController.m in Sources */,
 				7A8C99C6208C2B950029FCA0 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
